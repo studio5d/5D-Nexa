@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+      <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Job Board | 5D NEXA" />
+    <meta name="description" content="Browse current roles, connect with employers, and apply for job opportunities within the 5D NEXA ecosystem." />
+    <meta name="keywords" content="5D NEXA, digital workspace, AI collaboration platform, remote jobs, team management, productivity software, online learning platform, document collaboration, project management, business automation, SaaS platform, AI workspace, workflow management, digital ecosystem" />
+    <meta name="author" content="5D Digital Tech Solutions" />
+    <meta name="robots" content="index, follow" />
     <title>Job Board | 5D NEXA</title>
     <link rel="icon" type="image/png" href="Img/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" type="image/png" href="Img/logo.png" />
+    <link rel="apple-touch-icon" href="Img/logo.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0B1220" />
+    <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="topbar">
+            <header class="topbar">
         <a class="brand" href="index.html">
           <img src="Img/logo.png" alt="5D NEXA logo" class="brand-logo" />
           <div>
             <span class="brand-name">5D NEXA</span>
-            <span class="brand-tag">CONNECT. INTELLIGENCE. GROWTH.</span>
           </div>
         </a>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
         <nav class="main-nav">
           <div class="nav-item dropdown">
             <button class="dropdown-toggle" aria-expanded="false">Products</button>
@@ -39,8 +59,6 @@
             </div>
           </div>
           <a href="job-board.html">Job Board</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="quick-services.html">Quick Services</a>
           <div class="nav-item dropdown">
             <button class="dropdown-toggle" aria-expanded="false">Conference</button>
             <div class="dropdown-menu small-menu">
@@ -48,6 +66,8 @@
               <a href="#conference-financing">Conference Financing</a>
             </div>
           </div>
+          <a href="pricing.html">Pricing</a>
+          <a href="quick-services.html">Services</a>
           <a href="getting-started.html">Getting Started</a>
           <div class="nav-item dropdown">
             <button class="dropdown-toggle" aria-expanded="false">Policies</button>
@@ -56,8 +76,9 @@
               <a href="refund-policy.html" target="_blank">Refund Policy</a>
             </div>
           </div>
-          <a href="#subscribe">Subscribe</a>
-          <a class="nav-login" href="login.html">Login</a>
+    
+          <a href="login.html" class="btn btn-login">Login</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">🌙</button>
         </nav>
       </header>
 
@@ -91,35 +112,49 @@
         <section class="job-listings">
           <div class="job-grid">
             <article class="job-card">
-              <div class="job-header">
+              <div class="conference-card-image">
+                <img src="Img/Full Stack Developer.webp" alt="Senior Software Engineer" />
+              </div>
+              <div class="conference-card-body">
                 <h3>Senior Software Engineer</h3>
-                <span class="job-company">TechCorp Inc.</span>
-              </div>
-              <div class="job-meta">
-                <span>Remote</span>
-                <span>$120k - $150k</span>
-                <span>Full-time</span>
-              </div>
-              <p>Looking for an experienced software engineer to join our team...</p>
-              <div class="job-actions">
-                <a href="#" class="btn btn-secondary">View Details</a>
-                <a href="#" class="btn btn-primary">Apply Now</a>
+                <div class="job-meta">
+                  <div class="job-detail">
+                    <span class="job-label">💰 Salary:</span>
+                    <span class="job-value">₦180M - ₦225M</span>
+                  </div>
+                  <div class="job-detail">
+                    <span class="job-label">📍 Location:</span>
+                    <span class="job-value">Remote</span>
+                  </div>
+                  <div class="job-detail">
+                    <span class="job-label">⏰ Type:</span>
+                    <span class="job-value">Full-time</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-small">Apply Now</a>
               </div>
             </article>
             <article class="job-card">
-              <div class="job-header">
+              <div class="conference-card-image">
+                <img src="Img/Product Manager.jpg" alt="Product Manager" />
+              </div>
+              <div class="conference-card-body">
                 <h3>Product Manager</h3>
-                <span class="job-company">Innovate Solutions</span>
-              </div>
-              <div class="job-meta">
-                <span>Hybrid</span>
-                <span>$90k - $110k</span>
-                <span>Full-time</span>
-              </div>
-              <p>Drive product strategy and development for our growing platform...</p>
-              <div class="job-actions">
-                <a href="#" class="btn btn-secondary">View Details</a>
-                <a href="#" class="btn btn-primary">Apply Now</a>
+                <div class="job-meta">
+                  <div class="job-detail">
+                    <span class="job-label">💰 Salary:</span>
+                    <span class="job-value">₦135M - ₦165M</span>
+                  </div>
+                  <div class="job-detail">
+                    <span class="job-label">📍 Location:</span>
+                    <span class="job-value">Hybrid</span>
+                  </div>
+                  <div class="job-detail">
+                    <span class="job-label">⏰ Type:</span>
+                    <span class="job-value">Full-time</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-small">Apply Now</a>
               </div>
             </article>
             <!-- Add more job cards as needed -->
@@ -127,7 +162,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+            <footer class="footer" id="policies">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="brand">
@@ -139,10 +174,10 @@
             </div>
             <p>Empowering organizations with modern team management and collaboration solutions.</p>
             <div class="social-links">
-              <a href="#" aria-label="Facebook"></a>
-              <a href="#" aria-label="Twitter"></a>
-              <a href="#" aria-label="LinkedIn"></a>
-              <a href="#" aria-label="Instagram"></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div class="footer-links">
@@ -162,9 +197,9 @@
             </div>
             <div class="footer-column">
               <h4>Legal</h4>
-              <a href="policies.html">Privacy Policy</a>
-              <a href="policies.html">Terms of Service</a>
-              <a href="policies.html">Cookie Policy</a>
+              <a href="policies.html" target="_blank">Privacy Policy</a>
+              <a href="policies.html" target="_blank">Terms of Service</a>
+              <a href="policies.html" target="_blank">Cookie Policy</a>
               <a href="contact-support.html">Contact Us</a>
             </div>
           </div>
@@ -174,6 +209,10 @@
           <p>Made with  by 5D NEXA</p>
         </div>
       </footer>
+
+      <button class="assistant-btn" aria-label="Open AI Assistant">
+        🤖 AI Assistant
+      </button>
     </div>
 
     <script src="script.js"></script>

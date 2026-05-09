@@ -1506,6 +1506,19 @@ img {
   padding: 40px 0;
 }
 
+.resources-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resources-section .section-header span {
+  display: block;
+}
+
+.resources-section .section-header h2 {
+  margin: 0;
+}
+
 .resources-grid {
   display: grid;
   gap: 24px;
@@ -1841,6 +1854,21 @@ img {
   padding: 60px 0;
 }
 
+.services-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-section .section-header h1 {
+  margin: 0 0 8px;
+}
+
+.services-section .section-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #9bb0cc;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1865,7 +1893,11 @@ img {
 .service-icon {
   font-size: 3rem;
   color: #60c6ff;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 
 .service-card h3 {
@@ -1996,7 +2028,7 @@ img {
 
   .main-nav.open {
     display: flex;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(8, 14, 24, 0.98);
   }
 
   :root.light-mode .main-nav.open {
@@ -2009,6 +2041,11 @@ img {
     text-align: left;
     border-radius: 12px;
     font-size: 1rem;
+    color: #eef4ff;
+  }
+
+  .dropdown-toggle {
+    color: #eef4ff;
   }
 
   :root.light-mode .main-nav,
@@ -2019,6 +2056,20 @@ img {
   :root.light-mode .main-nav a,
   :root.light-mode .dropdown-toggle {
     color: #333 !important;
+  }
+
+  .dropdown-menu {
+    background: rgba(8, 14, 24, 0.95) !important;
+    border-color: rgba(120, 168, 255, 0.14) !important;
+  }
+
+  .dropdown-menu a {
+    color: #eef4ff !important;
+  }
+
+  .dropdown-menu a:hover {
+    color: #72c8ff !important;
+    background: rgba(96, 198, 255, 0.1) !important;
   }
 
   :root.light-mode .dropdown-menu {
