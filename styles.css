@@ -2011,6 +2011,30 @@ img {
     font-size: 1rem;
   }
 
+  :root.light-mode .main-nav,
+  :root.light-mode .main-nav.open {
+    background: rgba(255, 255, 255, 0.96) !important;
+  }
+
+  :root.light-mode .main-nav a,
+  :root.light-mode .dropdown-toggle {
+    color: #333 !important;
+  }
+
+  :root.light-mode .dropdown-menu {
+    background: rgba(255, 255, 255, 0.98) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  :root.light-mode .dropdown-menu a {
+    color: #333 !important;
+  }
+
+  :root.light-mode .dropdown-menu a:hover {
+    color: #000 !important;
+    background: rgba(0, 0, 0, 0.04) !important;
+  }
+
   .nav-signup {
     background: rgba(96, 198, 255, 0.2);
     color: #72c8ff;
@@ -2155,6 +2179,14 @@ body {
   font-weight: 500;
   margin-bottom: 50px;
   color: #e5e7eb;
+}
+
+:root.light-mode .section h2 {
+  color: #1a1a1a;
+}
+
+:root.light-mode .section h2 {
+  color: #1a1a1a;
 }
 
 /* Grid */
