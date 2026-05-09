@@ -1996,6 +1996,11 @@ img {
 
   .main-nav.open {
     display: flex;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  :root.light-mode .main-nav.open {
+    background: rgba(255, 255, 255, 0.96);
   }
 
   .main-nav a {
@@ -2185,18 +2190,9 @@ body {
   color: #666;
 }
 
-:root.light-mode .card:hover {
-  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+:root.light-mode .section h2 {
+  color: #1a1a1a;
 }
-
-/* Glow border effect */
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 24px;
-  padding: 1px;
-  background: linear-gradient(135deg, #007bff, transparent);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
